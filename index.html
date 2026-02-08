@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Me 💘</title>
+
+<style>
+body {
+    margin: 0;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+/* Background Image */
+.image-section {
+    position: absolute;
+    width: 576px;
+    height: 1024px;
+    left: 432px;
+    top: 0;
+    background-image: url("bgforthatshit.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Button */
+.button {
+    position: absolute;
+    width: 218.62px;
+    height: 78.65px;
+    left: 610.69px;
+    top: 777.1px;
+
+    background: rgba(217, 1, 160, 0.77);
+    border: 1px solid #D901A0;
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button Text */
+.button span {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -0.03em;
+    color: #DEC5C8;
+}
+
+/* Hover effect */
+.button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="image-section"></div>
+
+    <a href="before.html" class="button">
+        <span>click me!</span>
+    </a>
+
+</div>
+
+</body>
+</html>

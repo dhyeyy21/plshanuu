@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Be My Valentine?</title>
+
+<style>
+body {
+    margin: 0;
+    background: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+/* Image Section */
+.image-section {
+    position: absolute;
+    width: 576px;
+    height: 1024px;
+    left: 432px;
+    top: 0;
+    background-image: url("haneeproponk.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Buttons */
+.button {
+    position: absolute;
+    width: 98px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.36);
+    border: 2px solid #D4009F;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #D4009F;
+    color: #FFFFFF;
+}
+
+/* YES Button */
+#yesBtn {
+    left: 584px;
+    top: 586px;
+}
+
+/* NO Button */
+#noBtn {
+    left: 756px;
+    top: 586px;
+}
+
+/* Message Text */
+.message {
+    position: absolute;
+    width: 357px;
+    left: 541px;
+    top: 860px;
+    font-size: 32px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #D4009F;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="image-section"></div>
+
+    <button class="button" id="yesBtn">YES</button>
+    <button class="button" id="noBtn">NO</button>
+
+    <div class="message">
+        no is not an option my love you deep in this now hehe
+    </div>
+
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", function () {
+    const randomX = Math.floor(Math.random() * 1200);
+    const randomY = Math.floor(Math.random() * 900);
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+});
+
+document.getElementById("yesBtn").addEventListener("click", function () {
+    window.location.href = "yes.html";
+});
+</script>
+
+</body>
+</html>
