@@ -12,67 +12,62 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+body {
     font-family: Helvetica, Arial, sans-serif;
+    background: #fff;
+    text-align: center;
 }
 
-/* Fullscreen background image */
-.hero {
-    position: relative;
+/* Wrapper */
+.wrapper {
     width: 100%;
-    height: 100vh;
-    background-image: url("bgforthatshit.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-/* Centered Button */
+/* Image FULL WIDTH */
+.hero-img {
+    width: 100%;
+    height: auto; /* keeps ratio */
+    display: block;
+}
+
+/* Button BELOW image */
+.button-container {
+    margin-top: -120px; /* pulls button upward closer to text */
+    margin-bottom: 40px;
+}
+
 .button {
-    position: absolute;
-    left: 50%;
-    top: 60%; /* controls vertical position */
-    transform: translate(-50%, -50%);
-
-    padding: 20px 45px;
-    background: rgba(217, 1, 160, 0.77);
-    border: 1px solid #D901A0;
-    border-radius: 30px;
-    backdrop-filter: blur(30px);
-
-    text-decoration: none;
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transition: transform 0.3s ease;
-}
-
-/* Button Text */
-.button span {
+    padding: 20px 50px;
+    font-size: 24px;
     font-weight: 700;
-    font-size: 26px;
-    letter-spacing: -0.03em;
-    color: #DEC5C8;
+    background: rgba(217, 1, 160, 0.9);
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-/* Hover effect */
 .button:hover {
-    transform: translate(-50%, -50%) scale(1.08);
+    transform: scale(1.08);
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-    <a href="before.html" class="button">
-        <span>click me!</span>
-    </a>
+<div class="wrapper">
+
+    <!-- FULL WIDTH IMAGE -->
+    <img src="bgforthatshit.png" class="hero-img">
+
+    <!-- BUTTON BELOW TEXT -->
+    <div class="button-container">
+        <a href="before.html">
+            <button class="button">click me!</button>
+        </a>
+    </div>
+
 </div>
 
 </body>
