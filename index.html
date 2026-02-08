@@ -18,25 +18,25 @@ html, body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Fullscreen image section */
+/* Fullscreen image */
 .hero {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url("bgforthatshit.png");
     background-size: cover;
-    background-position: left center; /* Align image to left */
+    background-position: left center;
     background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: flex-start; /* Align content left */
-    align-items: center;
-
-    padding-left: 40px; /* spacing from edge */
 }
 
 /* Button */
 .button {
-    padding: 18px 40px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+
+    padding: 16px 36px; /* reduced size */
     background: rgba(217, 1, 160, 0.77);
     border: 1px solid #D901A0;
     border-radius: 30px;
@@ -55,14 +55,14 @@ html, body {
 /* Button Text */
 .button span {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px; /* reduced from 36px */
     letter-spacing: -0.03em;
     color: #DEC5C8;
 }
 
 /* Hover */
 .button:hover {
-    transform: scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
 }
 </style>
 </head>
