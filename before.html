@@ -25,13 +25,11 @@ body {
 /* Buttons */
 .button {
     position: absolute;
-    left: 150px;
-    top: 800px;
-    padding: 12px 28px;
+    padding: 18px 38px;   /* bigger buttons */
     background: rgba(255, 255, 255, 0.4);
     border: 2px solid #D4009F;
-    border-radius: 25px;
-    font-size: 16px;
+    border-radius: 30px;
+    font-size: 18px;      /* slightly bigger text */
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -43,14 +41,16 @@ body {
 
 /* YES button position */
 #yesBtn {
-    left: 150px;   /* change this */
-    top: 500px;    /* change this */
+    left: 35%;
+    top: 58%;   /* move this slightly if needed */
+    transform: translateX(-50%);
 }
 
-/* NO button position */
+/* NO button */
 #noBtn {
-    left: 300px;   /* change this */
-    top: 500px;    /* change this */
+    left: 65%;
+    top: 58%;
+    transform: translateX(-50%);
 }
 
 /* Message */
@@ -95,6 +95,7 @@ document.getElementById("yesBtn").addEventListener("click", function () {
 
 </body>
 </html>
+
 
 
 
